@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mr Robot!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+        <div>
+            <a class="headerlogo" href="index.html">
+                <img src="images/logo.jpg" />
+            </a>
+            <span id="headername">Mr. Robot</span>
+            <input type="search" class="searchbox" placeholder="Search our store" />
+        </div>
+
+        <nav class="backgroundgradient">
+            <ul>
+              <li><a class="navlink" href="index.html">Home</a></li>
+              <li><a class="navlink" href="robots.html">Robots</a></li>
+              <li><a class="navlink" href="computers.html">Hardware</a></li>
+              <li><a class="navlink" href="contact.html">Contact</a></li>
+              <li><a class="navlink" href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form>
+      <fieldset>
+        <legend>Select a CPU</legend>
+        <p><label for="i3"><input type="radio" name="CPU" id="i3">Intel i3</label></p>
+        <p><label for="i4"><input type="radio" name="CPU" id="i4"></label>Intel i4</p>
+        <p><label for="i7"><input type="radio" name="CPU" id="i7"></label>Intel i7</p>
+      </fieldset>
+  <fieldset>
+    <legend>Select Ram</legend>
+    <p><label for="8"><input type="radio" name="ram" id="8">8gig</label></p>
+    <p><label for="16"><input type="radio" name="ram" id="16">16gig</label></p>
+  </fieldset>
+    <fieldset>
+      <legend></legend>
+
+      <p><label for="vrh"><input type="checkbox" name="" id="vrh">Virtual Reality Helmet</label></p>
+      <p><label for="3ds"><input type="checkbox" name="" id="3ds">3D Screen</label></p>
+      <p><label for="ss"><input type="checkbox" name="" id="ss">Stereo Speakers</label></p>
+    </fieldset>
+  <p>
+    <button>Submit</button>
+  </p>
+</form>
+<footer>
+  <p>Our address is <address>1011 Crater Ave, Moon City: THE MOON</address></p>
+  <p class="textcontent">All site contents is copyright <a class="mainlink" href="http://www.mrrobot.com">Mr Robot!</a></p>
+  <p class="smalltext">This page was generated on <time>09:25:04.123</time>.</p>
+</footer>
+
+
+    <script>
+      /* TODO: Move To js file */
+      /*********************************************************
+       *
+       *   Test Checkboxes/Radio Buttons Script
+       *
+       *********************************************************/
+       // loop through each form and handle submit event
+       for (var i=0;i<document.forms.length;i++) {
+         var form = document.forms[i];
+         form.addEventListener('submit', function(e){
+           e.preventDefault();
+           var results = '';
+          // loop through all checkboxes to see if checked
+          var checkboxes = form.querySelectorAll("input[type='checkbox']");
+          for(var k = 0; k < checkboxes.length; k++) {
+            results += checkboxes[k].id + '=' + checkboxes[k].checked + '\n';
+          }
+          // loop through all radio butotns to display value
+          var radiobuttons = form.querySelectorAll("input[type='radio']:checked");
+          for(var m = 0; m < radiobuttons.length; m++) {
+            results += radiobuttons[m].name + '=' + radiobuttons[m].value + '\n';
+          }
+          // alert results
+          alert(results);
+        });
+      }
+    </script>
+  </body>
+</html>
