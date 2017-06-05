@@ -1,0 +1,55 @@
+.headerlogo img{
+  height: 200px;
+  width: 200px;
+}
+.searchbox {
+  position: absolute;
+  top: 10px;
+  right: 325px;
+}
+#headername {
+  font-size: 140;
+  text-shadow:2px 2px blue;
+}
+ul {
+  text-align: center;
+  display: inline;
+  list-style: none;
+}
+body {
+  background-color: grey;
+}
+footer {
+  text-align: center;
+  background-color: green;
+}
+welcometext p{
+  column-count: 2;
+  }
+fieldset {
+  border: none;
+}
+.navbar-background {
+  background-color: red;
+}
+.backgroundgradient {
+  background-color: red;
+}
+li {
+  display: inline;
+}
+#welcometext {
+  column-count: 2;
+}
+#robot-display {
+  font-style: italic;
+}
+#hardware-form {
+  font-style: italic;
+}
+#about-history {
+  font-style: italic;
+}
+#contactForm {
+  font-style: italic;
+}
