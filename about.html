@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <title>Mr Robot!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.css" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
+  <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
@@ -14,20 +16,39 @@
             <input type="search" class="searchbox" placeholder="Search our store" />
         </div>
 
-        <nav class="backgroundgradient">
+        <!--<nav class="backgroundgradient">
             <ul>
               <li><a class="navlink" href="index.html">Home</a></li>
               <li><a class="navlink" href="robots.html">Robots</a></li>
               <li><a class="navlink" href="computers.html">Hardware</a></li>
               <li><a class="navlink" href="contact.html">Contact</a></li>
               <li><a class="navlink" href="about.html">About</a></li>
-            </ul>
+            </ul>-->
+        </nav>
+        <nav class="backgroundgradient">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <div class="row">
+                <div class="col-xs-1 column-1-x"><a href="index.html">Home</a></div>
+                <div class="col-xs-1 column-1-x"><a href="robots.html">Robots</a></div>
+                <div class="col-xs-1 column-1-x"><a href="computers.html">Hardware</a></div>
+                <div class="col-xs-1 column-1-x"><a href="contact.html">Contact</a></div>
+                <div class="col-xs-1 column-1-x"><a href="about.html">About</a></div>
+            </div>
+          </div>
         </nav>
     </header>
   <div id="welcomeimage">
     <img src="images/Mr.-Robot-Welcome.png" height="400px" alt="About us">
   </div>
-    <fieldset>
+    <fieldset id="about-history">
       <legend>Our History</legend>
         <p>
 

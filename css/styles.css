@@ -1,0 +1,30 @@
+.headerlogo {
+  height: 10px;
+  width: 10px;
+}
+.searchbox {
+  position: absolute;
+  top: 20px;
+}
+#headername {
+  font-size: 140;
+}
+#myNavbar {
+  text-align: center;
+  display: inline-block;
+  background-color: red;
+  list-style: none;
+}
+body {
+  background-color: grey;
+}
+footer {
+  text-align: center;
+  background-color: green;
+}
+welcometext p{
+  column-count: 2;
+  }
+fieldset {
+  border: none;
+}
