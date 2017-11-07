@@ -1,0 +1,33 @@
+body {
+    background-color: lightgoldenrodyellow;
+
+}
+
+.headerlogo img {
+    margin-top:20px;
+    margin-right:20px;
+
+}
+
+.backgroundgradient ul li {
+    display: inline;
+    margin: 20px;
+    padding: 20px;
+}
+
+#headername {
+    color: navy ;
+    font-size: 16px;
+    text-emphasis-color: orangered;
+    font-family: Impact;
+    font-family: "Arial Black";
+}
+
+.searchbox {
+    background-color: darkorange;
+    text-decoration-color: navy;
+}
+
+
+
+
